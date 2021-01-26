@@ -1,0 +1,4 @@
+Line 55: Class MSDBGrid.DBGrid of control DBGrid1 was not a loaded control class.
+Line 98: Class MSDBCtls.DBCombo of control cboProduto was not a loaded control class.
+Line 111: Class MSComCtl2.DTPicker of control txtDataIni was not a loaded control class.
+Line 123: Class MSComCtl2.DTPicker of control txtDataFim was not a loaded control class.

@@ -1,0 +1,10 @@
+Line 193: Class TabDlg.SSTab of control SSTab1 was not a loaded control class.
+Line 336: Class MSDBCtls.DBCombo of control cboCFOP2 was not a loaded control class.
+Line 1026: Class MSComCtl2.DTPicker of control txtDataEmissao was not a loaded control class.
+Line 1040: Class MSDBGrid.DBGrid of control DBGrid2 was not a loaded control class.
+Line 1049: Class MSDBCtls.DBCombo of control cboProdutos was not a loaded control class.
+Line 1062: Class MSDBCtls.DBCombo of control cboCliente was not a loaded control class.
+Line 1076: Class MSDBGrid.DBGrid of control DBGrid3 was not a loaded control class.
+Line 1085: Class MSDBGrid.DBGrid of control DBGrid1 was not a loaded control class.
+Line 1094: Class MSComCtl2.DTPicker of control txtDataSaida was not a loaded control class.
+Line 1108: Class MSComCtl2.DTPicker of control txtHoraSaida was not a loaded control class.

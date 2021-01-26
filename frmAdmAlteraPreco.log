@@ -1,0 +1,8 @@
+Line 35: Class MSAdodcLib.Adodc of control dbFechamento was not a loaded control class.
+Line 82: Class MSAdodcLib.Adodc of control dbBicos was not a loaded control class.
+Line 129: Class MSAdodcLib.Adodc of control dbAlteraBico was not a loaded control class.
+Line 176: Class MSAdodcLib.Adodc of control dbTurnos was not a loaded control class.
+Line 223: Class MSAdodcLib.Adodc of control dbAlteracao was not a loaded control class.
+Line 270: Class MSDataGridLib.DataGrid of control DataGrid1 was not a loaded control class.
+Line 365: Class MSComCtl2.DTPicker of control txtData was not a loaded control class.
+Line 377: Class MSDataGridLib.DataGrid of control DataGrid2 was not a loaded control class.

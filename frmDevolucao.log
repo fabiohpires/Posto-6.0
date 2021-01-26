@@ -1,0 +1,10 @@
+Line 66: Class MSAdodcLib.Adodc of control dbBloqueiaFechamento was not a loaded control class.
+Line 272: Class MSComCtl2.DTPicker of control txtData was not a loaded control class.
+Line 366: Class MSCommLib.MSComm of control MSComm1 was not a loaded control class.
+Line 374: Class MSMask.MaskEdBox of control MaskEdBox1 was not a loaded control class.
+Line 389: Class MSMask.MaskEdBox of control MaskEdBox1 was not a loaded control class.
+Line 404: Class MSMask.MaskEdBox of control MaskEdBox1 was not a loaded control class.
+Line 419: Class MSMask.MaskEdBox of control MaskEdBox1 was not a loaded control class.
+Line 434: Class MSMask.MaskEdBox of control MaskEdBox1 was not a loaded control class.
+Line 449: Class MSDBGrid.DBGrid of control DBGrid2 was not a loaded control class.
+Line 458: Class MSDBGrid.DBGrid of control grdCheques was not a loaded control class.

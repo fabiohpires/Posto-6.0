@@ -1,0 +1,4 @@
+Line 39: Class MSAdodcLib.Adodc of control dbFormaDePG was not a loaded control class.
+Line 86: Class CRVIEWERLibCtl.CRViewer of control CR was not a loaded control class.
+Line 116: Class MSComCtl2.DTPicker of control txtDataIni was not a loaded control class.
+Line 128: Class MSComCtl2.DTPicker of control txtDataFim was not a loaded control class.

@@ -1,0 +1,5 @@
+Line 73: Class MSAdodcLib.Adodc of control dbVendedores was not a loaded control class.
+Line 141: Class MSComCtl2.DTPicker of control txtDataIni was not a loaded control class.
+Line 153: Class MSAdodcLib.Adodc of control dbPosto was not a loaded control class.
+Line 200: Class MSComCtl2.DTPicker of control txtDataFim was not a loaded control class.
+Line 212: Class MSDBGrid.DBGrid of control DBGrid1 was not a loaded control class.

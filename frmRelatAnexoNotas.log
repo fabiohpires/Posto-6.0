@@ -1,0 +1,16 @@
+Line 31: Class MSAdodcLib.Adodc of control dbServicosTotal was not a loaded control class.
+Line 78: Class MSAdodcLib.Adodc of control dbServicos was not a loaded control class.
+Line 125: Class TabDlg.SSTab of control SSTab1 was not a loaded control class.
+Line 169: Class MSDataGridLib.DataGrid of control DataGrid2 was not a loaded control class.
+Line 275: Class MSDataGridLib.DataGrid of control DataGrid3 was not a loaded control class.
+Line 398: Class MSDataGridLib.DataGrid of control DataGrid4 was not a loaded control class.
+Line 579: Class MSAdodcLib.Adodc of control dbProdutosTotal was not a loaded control class.
+Line 626: Class MSAdodcLib.Adodc of control dbProdutos was not a loaded control class.
+Line 673: Class MSAdodcLib.Adodc of control dbClientesCobranca was not a loaded control class.
+Line 720: Class MSAdodcLib.Adodc of control dbNotasTotal was not a loaded control class.
+Line 767: Class MSAdodcLib.Adodc of control dbNotas was not a loaded control class.
+Line 814: Class MSAdodcLib.Adodc of control dbPostos was not a loaded control class.
+Line 861: Class MSAdodcLib.Adodc of control dbClientes was not a loaded control class.
+Line 918: Class MSComCtl2.DTPicker of control txtDataIni was not a loaded control class.
+Line 930: Class MSDataGridLib.DataGrid of control DataGrid1 was not a loaded control class.
+Line 1084: Class MSComCtl2.DTPicker of control txtDataFim was not a loaded control class.

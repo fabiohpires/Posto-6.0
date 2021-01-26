@@ -1,0 +1,14 @@
+Line 31: Class MSAdodcLib.Adodc of control dbProdutos2 was not a loaded control class.
+Line 428: Class MSAdodcLib.Adodc of control dbBloqueiaFechamento was not a loaded control class.
+Line 501: Class TabDlg.SSTab of control SSTab1 was not a loaded control class.
+Line 635: Class MSDBCtls.DBCombo of control cboCliente was not a loaded control class.
+Line 666: Class MSDBGrid.DBGrid of control DBGrid1 was not a loaded control class.
+Line 706: Class MSComCtl2.DTPicker of control txtFechamento was not a loaded control class.
+Line 718: Class MSDBGrid.DBGrid of control DBGrid4 was not a loaded control class.
+Line 727: Class MSDBGrid.DBGrid of control DBGrid2 was not a loaded control class.
+Line 788: Class MSDBCtls.DBCombo of control cboFormadePg was not a loaded control class.
+Line 827: Class MSComCtl2.DTPicker of control txtVencimento was not a loaded control class.
+Line 839: Class MSDBGrid.DBGrid of control DBGrid3 was not a loaded control class.
+Line 894: Class MSComCtl2.DTPicker of control txtProrrogar was not a loaded control class.
+Line 906: Class MSDBGrid.DBGrid of control DBGrid5 was not a loaded control class.
+Line 915: Class MSComCtl2.DTPicker of control txtResgatado was not a loaded control class.

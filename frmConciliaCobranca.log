@@ -1,0 +1,5 @@
+Line 21: Class MSAdodcLib.Adodc of control dbConcilia was not a loaded control class.
+Line 68: Class MSAdodcLib.Adodc of control dbContas was not a loaded control class.
+Line 115: Class MSAdodcLib.Adodc of control dbBloqueiaFechamento was not a loaded control class.
+Line 272: Class MSDBGrid.DBGrid of control DBGrid1 was not a loaded control class.
+Line 281: Class MSComCtl2.DTPicker of control txtDtPagamento was not a loaded control class.

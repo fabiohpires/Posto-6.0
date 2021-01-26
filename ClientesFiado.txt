@@ -1,0 +1,8 @@
+2         ALFA LOCAÇÃO & TRANSLADO LTDA - ME                RUA ESTORIL, 300                                  69.313.302/0001-16  1
+3         HUGUINCHOS AUTO SOCORRO LTDA ME                   AV IPANEMA, 629                                   06.129.323/0001-66  1
+4         ARS ELETRONICA INDUSTRIAL LTDA                    RUA PROF OSWALDO QUIRINO SIMÕES, 479              46.271.532/0001-64  1
+5         ARTEFATOS PLAFI INDUSTRIA E COMERCIO LTDA         RUA DR LUIS ARROBAS MARTINS, 330                  00.999.737/0001-60  1
+7         BARRACAS CAPRI INDUSTRIA E COMERCIO LTDA          RUA NEUCHATEL, 348                                05.459.647/0001-08  1
+8         BAZAR E PAPELARIA LEBLON LTDA.                    R EDUARDO BIZZARRI, 13                            71.638.209/0001-23  1
+9         CALHAS DOURO INDUSTRIA E COMERCIO LTDA            AV DR LUIS ARROBA MARTINS, 690                    01.970.320/0001-37  1
+11        CERA PURA LTDA                                    AV LEBLON, 695                                    05.969.494/0001-30  1

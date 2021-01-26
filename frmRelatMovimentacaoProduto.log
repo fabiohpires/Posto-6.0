@@ -1,0 +1,6 @@
+Line 22: Class MSComCtl2.Animation of control Animation1 was not a loaded control class.
+Line 59: Class MSAdodcLib.Adodc of control dbProdutos was not a loaded control class.
+Line 114: Class MSAdodcLib.Adodc of control dbProdutosEstoque was not a loaded control class.
+Line 161: Class MSDataGridLib.DataGrid of control DataGrid1 was not a loaded control class.
+Line 359: Class MSComCtl2.DTPicker of control txtDataIni was not a loaded control class.
+Line 371: Class MSComCtl2.DTPicker of control txtDataFim was not a loaded control class.

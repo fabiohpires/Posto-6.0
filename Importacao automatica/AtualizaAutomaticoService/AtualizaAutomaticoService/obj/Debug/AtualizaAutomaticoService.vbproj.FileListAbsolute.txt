@@ -1,0 +1,9 @@
+D:\Projeto For Windows\Posto 6.0\Importacao automatica\AtualizaAutomaticoService\AtualizaAutomaticoService\bin\Debug\AtualizaAutomaticoService.exe
+D:\Projeto For Windows\Posto 6.0\Importacao automatica\AtualizaAutomaticoService\AtualizaAutomaticoService\bin\Debug\AtualizaAutomaticoService.pdb
+D:\Projeto For Windows\Posto 6.0\Importacao automatica\AtualizaAutomaticoService\AtualizaAutomaticoService\bin\Debug\AtualizaAutomaticoService.xml
+D:\Projeto For Windows\Posto 6.0\Importacao automatica\AtualizaAutomaticoService\AtualizaAutomaticoService\obj\Debug\ResolveAssemblyReference.cache
+D:\Projeto For Windows\Posto 6.0\Importacao automatica\AtualizaAutomaticoService\AtualizaAutomaticoService\obj\Debug\AtualizaAutomaticoService.Resources.resources
+D:\Projeto For Windows\Posto 6.0\Importacao automatica\AtualizaAutomaticoService\AtualizaAutomaticoService\obj\Debug\AtualizaAutomaticoService.vbproj.GenerateResource.Cache
+D:\Projeto For Windows\Posto 6.0\Importacao automatica\AtualizaAutomaticoService\AtualizaAutomaticoService\obj\Debug\AtualizaAutomaticoService.exe
+D:\Projeto For Windows\Posto 6.0\Importacao automatica\AtualizaAutomaticoService\AtualizaAutomaticoService\obj\Debug\AtualizaAutomaticoService.xml
+D:\Projeto For Windows\Posto 6.0\Importacao automatica\AtualizaAutomaticoService\AtualizaAutomaticoService\obj\Debug\AtualizaAutomaticoService.pdb

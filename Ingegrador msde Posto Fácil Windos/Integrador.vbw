@@ -1,0 +1,5 @@
+frmIntegrador = 100, 100, 970, 551, Z, 50, 50, 920, 501, C
+Registro = 0, 0, 0, 0, C
+Conversoes = 0, 0, 0, 0, C
+frmSplash = 0, 0, 0, 0, C, 75, 75, 945, 526, C
+frmConfigura = 0, 0, 0, 0, C, 25, 25, 895, 476, C

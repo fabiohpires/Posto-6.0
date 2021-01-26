@@ -1,0 +1,3 @@
+Line 140: Class MSDBGrid.DBGrid of control DBGrid1 was not a loaded control class.
+Line 149: Class MSComCtl2.DTPicker of control txtDataini was not a loaded control class.
+Line 161: Class MSComCtl2.DTPicker of control txtDatafim was not a loaded control class.

@@ -1,0 +1,15 @@
+Line 122: Class MSAdodcLib.Adodc of control dbImportacao was not a loaded control class.
+Line 697: Class MSAdodcLib.Adodc of control dbCupons was not a loaded control class.
+Line 743: Class MSAdodcLib.Adodc of control dbVendasLeituraX was not a loaded control class.
+Line 789: Class MSAdodcLib.Adodc of control dbResultado was not a loaded control class.
+Line 835: Class MSAdodcLib.Adodc of control dbEncerrantesNovos was not a loaded control class.
+Line 881: Class MSAdodcLib.Adodc of control dbPDVs was not a loaded control class.
+Line 964: Class MSComCtl2.Animation of control Animation1 was not a loaded control class.
+Line 987: Class MSDBGrid.DBGrid of control DBGrid1 was not a loaded control class.
+Line 996: Class MSDBGrid.DBGrid of control DBGrid2 was not a loaded control class.
+Line 1005: Class MSDBGrid.DBGrid of control DBGrid3 was not a loaded control class.
+Line 1014: Class MSDBGrid.DBGrid of control DBGrid4 was not a loaded control class.
+Line 1039: Class MSDBCtls.DBCombo of control cboTurno was not a loaded control class.
+Line 1053: Class MSComCtl2.DTPicker of control txtData was not a loaded control class.
+Line 1080: Class MSDBCtls.DBCombo of control cboResponsavel was not a loaded control class.
+Line 1138: Class MSMask.MaskEdBox of control txtInformado was not a loaded control class.

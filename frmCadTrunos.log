@@ -1,0 +1,11 @@
+Line 31: Class TabDlg.SSTab of control SSTab1 was not a loaded control class.
+Line 84: Class MSAdodcLib.Adodc of control dbPdvsTurnos was not a loaded control class.
+Line 165: Class MSDataGridLib.DataGrid of control DataGrid3 was not a loaded control class.
+Line 263: Class MSDataGridLib.DataGrid of control DataGrid2 was not a loaded control class.
+Line 389: Class MSMask.MaskEdBox of control MaskEdBox3 was not a loaded control class.
+Line 538: Class MSDataGridLib.DataGrid of control DataGrid1 was not a loaded control class.
+Line 652: Class MSMask.MaskEdBox of control MaskEdBox1 was not a loaded control class.
+Line 666: Class MSMask.MaskEdBox of control MaskEdBox2 was not a loaded control class.
+Line 711: Class MSAdodcLib.Adodc of control Adodc1 was not a loaded control class.
+Line 757: Class MSAdodcLib.Adodc of control dbPdvs was not a loaded control class.
+Line 816: Class MSMask.MaskEdBox of control txtHoraIni was not a loaded control class.

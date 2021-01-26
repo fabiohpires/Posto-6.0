@@ -1,0 +1,7 @@
+Line 39: Class MSAdodcLib.Adodc of control qFaturamento was not a loaded control class.
+Line 86: Class MSAdodcLib.Adodc of control dbClientes was not a loaded control class.
+Line 133: Class MSAdodcLib.Adodc of control dbNotas was not a loaded control class.
+Line 180: Class MSAdodcLib.Adodc of control dbFaturamento was not a loaded control class.
+Line 227: Class MSDataGridLib.DataGrid of control DataGrid1 was not a loaded control class.
+Line 459: Class MSComCtl2.DTPicker of control txtDataini was not a loaded control class.
+Line 471: Class MSComCtl2.DTPicker of control txtDatafim was not a loaded control class.

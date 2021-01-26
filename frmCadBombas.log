@@ -1,0 +1,11 @@
+Line 24: Class TabDlg.SSTab of control SSTab1 was not a loaded control class.
+Line 69: Class MSAdodcLib.Adodc of control dbFechamentos was not a loaded control class.
+Line 116: Class MSAdodcLib.Adodc of control dbBicosEncerrantesNovo was not a loaded control class.
+Line 163: Class MSAdodcLib.Adodc of control dbTurnos was not a loaded control class.
+Line 210: Class MSAdodcLib.Adodc of control dbBicos was not a loaded control class.
+Line 257: Class MSDataGridLib.DataGrid of control DataGrid2 was not a loaded control class.
+Line 398: Class MSComCtl2.DTPicker of control txtDataCaixa was not a loaded control class.
+Line 410: Class MSAdodcLib.Adodc of control Adodc1 was not a loaded control class.
+Line 514: Class MSMask.MaskEdBox of control MaskEdBox1 was not a loaded control class.
+Line 648: Class MSAdodcLib.Adodc of control dbProdutos was not a loaded control class.
+Line 695: Class MSDataGridLib.DataGrid of control DataGrid1 was not a loaded control class.

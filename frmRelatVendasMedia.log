@@ -1,0 +1,6 @@
+Line 22: Class MSAdodcLib.Adodc of control qVendas was not a loaded control class.
+Line 69: Class MSAdodcLib.Adodc of control qVendasTotal was not a loaded control class.
+Line 150: Class MSComCtl2.DTPicker of control txtDataIni was not a loaded control class.
+Line 162: Class MSComCtl2.DTPicker of control txtDataFim was not a loaded control class.
+Line 174: Class MSAdodcLib.Adodc of control dbFuncionarios was not a loaded control class.
+Line 234: Class MSDataGridLib.DataGrid of control DataGrid1 was not a loaded control class.

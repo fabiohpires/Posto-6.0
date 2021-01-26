@@ -1,0 +1,6 @@
+Line 30: Class MSAdodcLib.Adodc of control dbBloqueiaFechamento was not a loaded control class.
+Line 202: Class MSDBCtls.DBCombo of control cboDespesa was not a loaded control class.
+Line 299: Class MSDBCtls.DBCombo of control cboConta was not a loaded control class.
+Line 312: Class MSDBGrid.DBGrid of control DBGrid1 was not a loaded control class.
+Line 321: Class MSComCtl2.DTPicker of control txtDataLanc was not a loaded control class.
+Line 333: Class MSComCtl2.DTPicker of control txtDataImprime was not a loaded control class.

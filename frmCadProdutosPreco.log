@@ -1,0 +1,9 @@
+Line 32: Class MSAdodcLib.Adodc of control dbProdutosAltera2 was not a loaded control class.
+Line 79: Class MSAdodcLib.Adodc of control qProdutosAltera was not a loaded control class.
+Line 126: Class MSAdodcLib.Adodc of control dbProdutosAlteraDetalhe was not a loaded control class.
+Line 173: Class MSAdodcLib.Adodc of control dbProdutosAltera was not a loaded control class.
+Line 220: Class MSAdodcLib.Adodc of control dbProdutos was not a loaded control class.
+Line 280: Class MSAdodcLib.Adodc of control dbTurnos was not a loaded control class.
+Line 360: Class MSComCtl2.DTPicker of control txtDataCaixa was not a loaded control class.
+Line 372: Class MSDataGridLib.DataGrid of control DataGrid1 was not a loaded control class.
+Line 467: Class MSDataGridLib.DataGrid of control DataGrid2 was not a loaded control class.
