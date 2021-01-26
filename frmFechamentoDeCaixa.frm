@@ -1059,7 +1059,7 @@ Begin VB.Form frmFechamentoDeCaixa
       _ExtentX        =   2355
       _ExtentY        =   556
       _Version        =   393216
-      Format          =   72351745
+      Format          =   166133761
       CurrentDate     =   37600
    End
    Begin VB.Frame Frame1 

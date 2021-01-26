@@ -32,9 +32,9 @@ Begin VB.Form frmFechamentoDeCaixaNovo
    Begin VB.Frame Frame3 
       Caption         =   "Frame3"
       Height          =   5055
-      Left            =   2880
+      Left            =   3720
       TabIndex        =   55
-      Top             =   0
+      Top             =   6360
       Visible         =   0   'False
       Width           =   5895
       Begin MSAdodcLib.Adodc dbPdvs 
@@ -537,41 +537,41 @@ Begin VB.Form frmFechamentoDeCaixaNovo
       TabCaption(1)   =   "Produtos"
       TabPicture(1)   =   "frmFechamentoDeCaixaNovo.frx":0551
       Tab(1).ControlEnabled=   0   'False
-      Tab(1).Control(0)=   "Label14"
-      Tab(1).Control(1)=   "lblEstoque"
-      Tab(1).Control(2)=   "Label11"
-      Tab(1).Control(3)=   "Label8"
-      Tab(1).Control(4)=   "Label4"
-      Tab(1).Control(5)=   "Label1"
-      Tab(1).Control(6)=   "Label15"
-      Tab(1).Control(7)=   "lblTotalProdutos2"
-      Tab(1).Control(8)=   "lblComissoes2"
-      Tab(1).Control(9)=   "Label17"
+      Tab(1).Control(0)=   "txtDesconto"
+      Tab(1).Control(1)=   "cmdRemoverProduto"
+      Tab(1).Control(2)=   "DataGrid2"
+      Tab(1).Control(3)=   "txtCodProduto"
+      Tab(1).Control(4)=   "txtQtd"
+      Tab(1).Control(5)=   "txtCodFunc"
+      Tab(1).Control(6)=   "cmdIncluir"
+      Tab(1).Control(7)=   "cboProdutos"
+      Tab(1).Control(8)=   "lblDesconto"
+      Tab(1).Control(9)=   "lblTotalVenda"
       Tab(1).Control(10)=   "Label18"
-      Tab(1).Control(11)=   "lblTotalVenda"
-      Tab(1).Control(12)=   "lblDesconto"
-      Tab(1).Control(13)=   "cboProdutos"
-      Tab(1).Control(14)=   "cmdIncluir"
-      Tab(1).Control(15)=   "txtCodFunc"
-      Tab(1).Control(16)=   "txtQtd"
-      Tab(1).Control(17)=   "txtCodProduto"
-      Tab(1).Control(18)=   "DataGrid2"
-      Tab(1).Control(19)=   "cmdRemoverProduto"
-      Tab(1).Control(20)=   "txtDesconto"
+      Tab(1).Control(11)=   "Label17"
+      Tab(1).Control(12)=   "lblComissoes2"
+      Tab(1).Control(13)=   "lblTotalProdutos2"
+      Tab(1).Control(14)=   "Label15"
+      Tab(1).Control(15)=   "Label1"
+      Tab(1).Control(16)=   "Label4"
+      Tab(1).Control(17)=   "Label8"
+      Tab(1).Control(18)=   "Label11"
+      Tab(1).Control(19)=   "lblEstoque"
+      Tab(1).Control(20)=   "Label14"
       Tab(1).ControlCount=   21
       TabCaption(2)   =   "Estoque"
       TabPicture(2)   =   "frmFechamentoDeCaixaNovo.frx":056D
       Tab(2).ControlEnabled=   0   'False
-      Tab(2).Control(0)=   "cmdExtornaTurno"
-      Tab(2).Control(1)=   "cmdTransfere"
-      Tab(2).Control(2)=   "DataGrid3"
-      Tab(2).Control(3)=   "cmdEntraCombustivel"
+      Tab(2).Control(0)=   "cmdEntraCombustivel"
+      Tab(2).Control(1)=   "DataGrid3"
+      Tab(2).Control(2)=   "cmdTransfere"
+      Tab(2).Control(3)=   "cmdExtornaTurno"
       Tab(2).ControlCount=   4
       TabCaption(3)   =   "Resumo"
       TabPicture(3)   =   "frmFechamentoDeCaixaNovo.frx":0589
       Tab(3).ControlEnabled=   0   'False
-      Tab(3).Control(0)=   "Frame2"
-      Tab(3).Control(1)=   "cmdExibeComissoes"
+      Tab(3).Control(0)=   "cmdExibeComissoes"
+      Tab(3).Control(1)=   "Frame2"
       Tab(3).ControlCount=   2
       TabCaption(4)   =   "Erros de Importação"
       TabPicture(4)   =   "frmFechamentoDeCaixaNovo.frx":05A5
@@ -1812,7 +1812,7 @@ Begin VB.Form frmFechamentoDeCaixaNovo
       _ExtentX        =   2355
       _ExtentY        =   556
       _Version        =   393216
-      Format          =   168361985
+      Format          =   181141505
       CurrentDate     =   39974
    End
    Begin VB.Frame Frame1 
@@ -2572,8 +2572,8 @@ Dim dbConfig As New ADODB.Recordset
 Dim dbVendasLeituraX As New ADODB.Recordset
 Dim dbImportacao As New ADODB.Recordset
 Dim dbDespesasTipo As New ADODB.Recordset
-Dim dbFormaDePG As New ADODB.Recordset
-Dim DbClientes As New ADODB.Recordset
+Dim dbFormaDePg As New ADODB.Recordset
+Dim dbClientes As New ADODB.Recordset
 Dim dbClientesCarros As New ADODB.Recordset
 Dim dbProdutos As New ADODB.Recordset
 Dim dbTotalNotas As New ADODB.Recordset
@@ -2593,11 +2593,11 @@ db.Execute "delete *from importacaoerros where codigofechamento=" & dbFechamento
 dbDespesasTipo.CursorLocation = adUseClient
 dbDespesasTipo.Open "select *from despesatipo", db, adOpenForwardOnly, adLockReadOnly
 
-dbFormaDePG.CursorLocation = adUseClient
-dbFormaDePG.Open "select *from formadepagamento", db, adOpenForwardOnly, adLockReadOnly
+dbFormaDePg.CursorLocation = adUseClient
+dbFormaDePg.Open "select *from formadepagamento", db, adOpenForwardOnly, adLockReadOnly
 
-DbClientes.CursorLocation = adUseClient
-DbClientes.Open "select *from clientes", db, adOpenKeyset, adLockOptimistic
+dbClientes.CursorLocation = adUseClient
+dbClientes.Open "select *from clientes", db, adOpenKeyset, adLockOptimistic
 
 dbClientesCarros.CursorLocation = adUseClient
 dbClientesCarros.Open "select *from clientescarros", db, adOpenForwardOnly, adLockReadOnly
@@ -2885,16 +2885,16 @@ naoIncuirProduto:
             If IsNumeric(Cupom) = False Then
               Cupom = 0
             End If
-            DbClientes.MoveFirst
-            DbClientes.Find "codigonoposto=" & CodigoCliente
-            If DbClientes.EOF = True Then
+            dbClientes.MoveFirst
+            dbClientes.Find "codigonoposto=" & CodigoCliente
+            If dbClientes.EOF = True Then
               'MsgBox "Código de cliente de nota " & CodigoCliente & " não encontrado!"
               'GravaBloqueado CodigoCliente, "Não encontrado", Cupom, ValorTotal, "Cliente não localizado"
               db.Execute "insert into importacaoerros (codigofechamento,tipo,Descri,codigoclientenoposto) values (" & dbFechamentos.Recordset!CodigoFechamento & ",'Cliente','Cliente não cadastrado'," & CodigoCliente & ")"
               GoTo SairDoCliente
             Else
               If dbProdutos.RecordCount <> 0 Then
-                If DbClientes!protestado = True Then
+                If dbClientes!protestado = True Then
                   'MsgBox "Cliente bloqueado!"
                   Autorizar = True
                   Autorizado = True
@@ -2921,20 +2921,20 @@ naoIncuirProduto:
                     Preco = PrecoAtual(dbProdutos!CodigoProduto, dbFechamentos.Recordset!DataCaixa, dbFechamentos.Recordset!CodigoTurno)
                   End If
                 End If
-                If DbClientes!mensalista = False Then
-                  If DbClientes!desativado < dbFechamentos.Recordset!DataCaixa Then
+                If dbClientes!mensalista = False Then
+                  If dbClientes!desativado < dbFechamentos.Recordset!DataCaixa Then
                     If Usuarios.Grupo.admDatas < 2 Then
                       'MsgBox "O cliente " & DbClientes!Nome & " está desativado!"
                       If Configura.NotaBloqueia = 0 Then
                         'GravaBloqueado DbClientes!CodigoCliente, DbClientes!Nome, Cupom, ValorTotal, "Cliente Desativado"
-                        db.Execute "insert into importacaoerros (codigofechamento,tipo,Descri,codigoclientenoposto,codigoclientesistema) values (" & dbFechamentos.Recordset!CodigoFechamento & ",'Cliente','Cliente Bloqueado'," & CodigoCliente & "," & DbClientes!CodigoCliente & ")"
+                        db.Execute "insert into importacaoerros (codigofechamento,tipo,Descri,codigoclientenoposto,codigoclientesistema) values (" & dbFechamentos.Recordset!CodigoFechamento & ",'Cliente','Cliente Bloqueado'," & CodigoCliente & "," & dbClientes!CodigoCliente & ")"
                         Autorizar = True
                         Motivo = "Desativado"
                       End If
                     Else
                       'Resposta = MsgBox("O cliente " & DbClientes!Nome & " está desativado! Deseja incluir esta nota?", vbYesNo + vbDefaultButton2)
                       'GravaBloqueado DbClientes!CodigoCliente, DbClientes!Nome, Cupom, ValorTotal, "Cliente Desativado"
-                      db.Execute "insert into importacaoerros (codigofechamento,tipo,Descri,codigoclientenoposto,codigoclientesistema) values (" & dbFechamentos.Recordset!CodigoFechamento & ",'Cliente','Cliente Bloqueado'," & CodigoCliente & "," & DbClientes!CodigoCliente & ")"
+                      db.Execute "insert into importacaoerros (codigofechamento,tipo,Descri,codigoclientenoposto,codigoclientesistema) values (" & dbFechamentos.Recordset!CodigoFechamento & ",'Cliente','Cliente Bloqueado'," & CodigoCliente & "," & dbClientes!CodigoCliente & ")"
                       If Configura.NotaBloqueia = 0 Then
                         Autorizar = True
                         Autorizado = False
@@ -2943,8 +2943,8 @@ naoIncuirProduto:
                     End If
                   End If
                 End If
-                If DbClientes!limitar = True Then
-                  If IsNull(DbClientes!Limite) = False Then
+                If dbClientes!limitar = True Then
+                  If IsNull(dbClientes!Limite) = False Then
                     Limite = CCur(ValorTotal)
                     dbTotalNotas.Requery
                     If dbTotalNotas.RecordCount <> 0 Then
@@ -2967,11 +2967,11 @@ naoIncuirProduto:
                         End If
                       End If
                     End If
-                    If Limite > DbClientes!Limite Then
+                    If Limite > dbClientes!Limite Then
                       If Usuarios.Grupo.admDatas < 2 Then
                         'MsgBox "O cliente " & DbClientes!Nome & " ultrapassará o limite dele! Somente o administrador pode lançar."
                         'GravaBloqueado DbClientes!CodigoCliente, DbClientes!Nome, Cupom, ValorTotal, "Ultrapassou o limite estipulado"
-                        db.Execute "insert into importacaoerros (codigofechamento,tipo,Descri,codigoclientenoposto,codigoclientesistema,limitenadata,valorbloqueado) values (" & dbFechamentos.Recordset!CodigoFechamento & ",'Cliente','Cliente ultrapassou o limite'," & CodigoCliente & "," & DbClientes!CodigoCliente & "," & NumeroIngles(Limite - ValorTotal) & "," & NumeroIngles(ValorTotal) & ")"
+                        db.Execute "insert into importacaoerros (codigofechamento,tipo,Descri,codigoclientenoposto,codigoclientesistema,limitenadata,valorbloqueado) values (" & dbFechamentos.Recordset!CodigoFechamento & ",'Cliente','Cliente ultrapassou o limite'," & CodigoCliente & "," & dbClientes!CodigoCliente & "," & NumeroIngles(Limite - ValorTotal) & "," & NumeroIngles(ValorTotal) & ")"
                         Autorizar = True
                         Motivo = "Limite"
                       Else
@@ -2981,7 +2981,7 @@ naoIncuirProduto:
                         Autorizar = True
                         Autorizado = False
                         Motivo = "Ultrapassou Limite"
-                        db.Execute "insert into importacaoerros (codigofechamento,tipo,Descri,codigoclientenoposto,codigoclientesistema,limitenadata,valorbloqueado) values (" & dbFechamentos.Recordset!CodigoFechamento & ",'Cliente','Cliente ultrapassou o limite'," & CodigoCliente & "," & DbClientes!CodigoCliente & "," & NumeroIngles(Limite - ValorTotal) & "," & NumeroIngles(ValorTotal) & ")"
+                        db.Execute "insert into importacaoerros (codigofechamento,tipo,Descri,codigoclientenoposto,codigoclientesistema,limitenadata,valorbloqueado) values (" & dbFechamentos.Recordset!CodigoFechamento & ",'Cliente','Cliente ultrapassou o limite'," & CodigoCliente & "," & dbClientes!CodigoCliente & "," & NumeroIngles(Limite - ValorTotal) & "," & NumeroIngles(ValorTotal) & ")"
                       End If
                     End If
                   Else
@@ -2989,14 +2989,14 @@ naoIncuirProduto:
                     'GravaBloqueado DbClientes!CodigoCliente, DbClientes!Nome, Cupom, ValorTotal, "Marcado para limitar mas não possue valor a ser limitado"
                     Autorizar = True
                     Motivo = "Sem Limite"
-                    db.Execute "insert into importacaoerros (codigofechamento,tipo,Descri,codigoclientenoposto,codigoclientesistema) values (" & dbFechamentos.Recordset!CodigoFechamento & ",'Cliente','Cliente marcado para limitar mas sem limite cadastrado'," & CodigoCliente & "," & DbClientes!CodigoCliente & ")"
+                    db.Execute "insert into importacaoerros (codigofechamento,tipo,Descri,codigoclientenoposto,codigoclientesistema) values (" & dbFechamentos.Recordset!CodigoFechamento & ",'Cliente','Cliente marcado para limitar mas sem limite cadastrado'," & CodigoCliente & "," & dbClientes!CodigoCliente & ")"
                   End If
                 End If
-                If DbClientes!diapagamento <> 0 Then
-                  If DbClientes!diapagamento >= 28 Then
+                If dbClientes!diapagamento <> 0 Then
+                  If dbClientes!diapagamento >= 28 Then
                     DataPrevista = CDate(Format(UltimoDiaDoMes(Month(dbFechamentos.Recordset!DataCaixa), Year(dbFechamentos.Recordset!DataCaixa)), "00") & "/" & Month(dbFechamentos.Recordset!DataCaixa) & "/" & Year(dbFechamentos.Recordset!DataCaixa))
                   Else
-                    DataPrevista = CDate(Format(DbClientes!diapagamento, "00") & "/" & Month(dbFechamentos.Recordset!DataCaixa) & "/" & Year(dbFechamentos.Recordset!DataCaixa))
+                    DataPrevista = CDate(Format(dbClientes!diapagamento, "00") & "/" & Month(dbFechamentos.Recordset!DataCaixa) & "/" & Year(dbFechamentos.Recordset!DataCaixa))
                   End If
                 Else
                   DataPrevista = DateAdd("m", 1, dbFechamentos.Recordset!DataCaixa)
@@ -3007,7 +3007,7 @@ naoIncuirProduto:
                 dbClientesProdutos.Filter = ""
                 If dbClientesProdutos.RecordCount <> 0 Then
                   dbClientesProdutos.MoveFirst
-                  dbClientesProdutos.Filter = "codigocliente=" & DbClientes!CodigoCliente & " and codproduto=" & CodigoProduto & " and validade>=#" & DataInglesa(txtData.Value) & "#"
+                  dbClientesProdutos.Filter = "codigocliente=" & dbClientes!CodigoCliente & " and codproduto=" & CodigoProduto & " and validade>=#" & DataInglesa(txtData.Value) & "#"
                   If dbClientesProdutos.EOF = False Then
                     If dbClientesProdutos!validade = txtData.Value Then
                       If dbClientesProdutos!HoraIni >= dbFechamentos.Recordset!HoraIni Then
@@ -3036,7 +3036,7 @@ naoIncuirProduto:
                         'GravaBloqueado DbClientes!CodigoCliente, DbClientes!Nome, Cupom, ValorTotal, "Produto " & CodigoProduto & " com preço diferenciado incorreto!"
                         Autorizar = True
                         Motivo = "Preço Diferenciado"
-                        db.Execute "insert into importacaoerros (codigofechamento,tipo,Descri,codigoclientenoposto,codigoclientesistema,valorposto,valorsistema) values (" & dbFechamentos.Recordset!CodigoFechamento & ",'Cliente','Cliente ultrapassou o limite'," & CodigoCliente & "," & DbClientes!CodigoCliente & "," & NumeroIngles(ValorTotal) & "," & NumeroIngles(TempValorPagar) & ")"
+                        db.Execute "insert into importacaoerros (codigofechamento,tipo,Descri,codigoclientenoposto,codigoclientesistema,valorposto,valorsistema) values (" & dbFechamentos.Recordset!CodigoFechamento & ",'Cliente','Cliente ultrapassou o limite'," & CodigoCliente & "," & dbClientes!CodigoCliente & "," & NumeroIngles(ValorTotal) & "," & NumeroIngles(TempValorPagar) & ")"
                       Else
                         'Resposta = MsgBox("O cliente " & DbClientes!Nome & " está com o produto diferenciado com valor incorreto! Deseja incluir esta nota?", vbYesNo + vbDefaultButton2)
                         'GravaBloqueado DbClientes!CodigoCliente, DbClientes!Nome, Cupom, ValorTotal, "Produto " & CodigoProduto & " com preço diferenciado incorreto!"
@@ -3044,7 +3044,7 @@ naoIncuirProduto:
                         Autorizar = True
                         Autorizado = False
                         Motivo = "Preço Diferenciado"
-                        db.Execute "insert into importacaoerros (codigofechamento,tipo,Descri,codigoclientenoposto,codigoclientesistema,valorposto,valorsistema) values (" & dbFechamentos.Recordset!CodigoFechamento & ",'Cliente','Cliente ultrapassou o limite'," & CodigoCliente & "," & DbClientes!CodigoCliente & "," & NumeroIngles(ValorTotal) & "," & NumeroIngles(TempValorPagar) & ")"
+                        db.Execute "insert into importacaoerros (codigofechamento,tipo,Descri,codigoclientenoposto,codigoclientesistema,valorposto,valorsistema) values (" & dbFechamentos.Recordset!CodigoFechamento & ",'Cliente','Cliente ultrapassou o limite'," & CodigoCliente & "," & dbClientes!CodigoCliente & "," & NumeroIngles(ValorTotal) & "," & NumeroIngles(TempValorPagar) & ")"
                       End If
                     End If
                   Else
@@ -3052,7 +3052,7 @@ naoIncuirProduto:
                     TempDif = (ValorUnitarioDif * Qtd) - ValorTotal
                     If TempDif > 0.01 Or TempDif < -0.01 Then
                       'MsgBox "Preço unitário incorreto!"
-                      db.Execute "insert into importacaoerros (codigofechamento,tipo,Descri,codigoclientenoposto,codigoclientesistema,valorposto,valorsistema) values (" & dbFechamentos.Recordset!CodigoFechamento & ",'Cliente','Cliente ultrapassou o limite'," & CodigoCliente & "," & DbClientes!CodigoCliente & "," & NumeroIngles(ValorTotalDif) & "," & NumeroIngles(ValorUnitarioDif * Qtd) & ")"
+                      db.Execute "insert into importacaoerros (codigofechamento,tipo,Descri,codigoclientenoposto,codigoclientesistema,valorposto,valorsistema) values (" & dbFechamentos.Recordset!CodigoFechamento & ",'Cliente','Cliente ultrapassou o limite'," & CodigoCliente & "," & dbClientes!CodigoCliente & "," & NumeroIngles(ValorTotalDif) & "," & NumeroIngles(ValorUnitarioDif * Qtd) & ")"
                       GoTo SairDoCliente
                     End If
                   End If
@@ -3064,7 +3064,7 @@ naoIncuirProduto:
                       'GravaBloqueado DbClientes!CodigoCliente, DbClientes!Nome, Cupom, ValorTotal, "Produto " & CodigoProduto & " com preço incorreto!"
                       Autorizar = True
                       Motivo = "Preço Diferenciado"
-                      db.Execute "insert into importacaoerros (codigofechamento,tipo,Descri,codigoclientenoposto,codigoclientesistema,valorposto,valorsistema) values (" & dbFechamentos.Recordset!CodigoFechamento & ",'Cliente','Cliente ultrapassou o limite'," & CodigoCliente & "," & DbClientes!CodigoCliente & "," & NumeroIngles(ValorTotal / Qtd) & "," & NumeroIngles(Preco) & ")"
+                      db.Execute "insert into importacaoerros (codigofechamento,tipo,Descri,codigoclientenoposto,codigoclientesistema,valorposto,valorsistema) values (" & dbFechamentos.Recordset!CodigoFechamento & ",'Cliente','Cliente ultrapassou o limite'," & CodigoCliente & "," & dbClientes!CodigoCliente & "," & NumeroIngles(ValorTotal / Qtd) & "," & NumeroIngles(Preco) & ")"
                     Else
                       'Resposta = MsgBox("O cliente " & DbClientes!Nome & " está com o produto diferenciado com valor incorreto! Deseja incluir esta nota?", vbYesNo + vbDefaultButton2)
                       'GravaBloqueado DbClientes!CodigoCliente, DbClientes!Nome, Cupom, ValorTotal, "Produto " & CodigoProduto & " com preço incorreto!"
@@ -3072,7 +3072,7 @@ naoIncuirProduto:
                       Autorizar = True
                       Autorizado = False
                       Motivo = "Preço incorreto!"
-                      db.Execute "insert into importacaoerros (codigofechamento,tipo,Descri,codigoclientenoposto,codigoclientesistema,valorposto,valorsistema) values (" & dbFechamentos.Recordset!CodigoFechamento & ",'Cliente','Cliente ultrapassou o limite'," & CodigoCliente & "," & DbClientes!CodigoCliente & "," & NumeroIngles(ValorTotal / Qtd) & "," & NumeroIngles(Preco) & ")"
+                      db.Execute "insert into importacaoerros (codigofechamento,tipo,Descri,codigoclientenoposto,codigoclientesistema,valorposto,valorsistema) values (" & dbFechamentos.Recordset!CodigoFechamento & ",'Cliente','Cliente ultrapassou o limite'," & CodigoCliente & "," & dbClientes!CodigoCliente & "," & NumeroIngles(ValorTotal / Qtd) & "," & NumeroIngles(Preco) & ")"
                     End If
                   End If
                 End If
@@ -3098,7 +3098,7 @@ naoIncuirProduto:
           On Error GoTo 0
           StrTemp = StrTemp & "Litros,Consumo,CodigoProduto,valorUnitario,Qtd,ValorUnitarioDif,ValorTotalDif,LucroDif,Autorizar,Autorizado,Motivo) values ("
           
-          StrTemp = StrTemp & dbFechamentos.Recordset!CodigoFechamento & "," & DbClientes!CodigoCliente & ",'" & DbClientes!Nome & "',#" & DataInglesa(Date) & " " & Time & "#,#" & DataInglesa(DataPrevista) & "#," & NumeroIngles(ValorTotal) & ",#" & DataInglesa(dbFechamentos.Recordset!DataCaixa) & "#,"
+          StrTemp = StrTemp & dbFechamentos.Recordset!CodigoFechamento & "," & dbClientes!CodigoCliente & ",'" & dbClientes!Nome & "',#" & DataInglesa(Date) & " " & Time & "#,#" & DataInglesa(DataPrevista) & "#," & NumeroIngles(ValorTotal) & ",#" & DataInglesa(dbFechamentos.Recordset!DataCaixa) & "#,"
           If Trim(Cupom) <> "" Then
             StrTemp = StrTemp & Trim(Cupom) & ","
           End If
@@ -3117,11 +3117,11 @@ naoIncuirProduto:
           
           db.Execute StrTemp & StrTemp2
         
-          If IsNull(DbClientes!UltimoAbastecimento) = True Then
-            DbClientes!UltimoAbastecimento = dbFechamentos.Recordset!DataCaixa
+          If IsNull(dbClientes!UltimoAbastecimento) = True Then
+            dbClientes!UltimoAbastecimento = dbFechamentos.Recordset!DataCaixa
           End If
-          If DbClientes!UltimoAbastecimento < dbFechamentos.Recordset!DataCaixa Then
-            DbClientes!UltimoAbastecimento = dbFechamentos.Recordset!DataCaixa
+          If dbClientes!UltimoAbastecimento < dbFechamentos.Recordset!DataCaixa Then
+            dbClientes!UltimoAbastecimento = dbFechamentos.Recordset!DataCaixa
           End If
           db.Execute "update clientes set TotalNotas=TotalNotas+" & NumeroIngles(ValorTotal) & " where codigocliente=" & CodigoCliente
           db.Execute "update clientes set saldo=limite-totalnotas-totalboleto where codigocliente=" & CodigoCliente
@@ -3159,7 +3159,7 @@ SairDoCliente:
       Case "005"
         'forma de pagamento recebido
         If SoPrimeira = False Then
-          If dbFormaDePG.RecordCount <> 0 Then
+          If dbFormaDePg.RecordCount <> 0 Then
             On Error GoTo semRecebido
             StrTemp2 = Trim(Mid(StrTemp, 5, 15))
             If IsNumeric(Trim(Trim(Mid(StrTemp, 5, 15)))) = True Then
@@ -3177,12 +3177,12 @@ SairDoCliente:
               End If
             End If
             
-            dbFormaDePG.MoveFirst
-            dbFormaDePG.Find "codigonoposto='" & Trim(Codigo) & "'"
-            If dbFormaDePG.EOF = False Then
-              Tarifa = dbFormaDePG!descontovalor
-              Operacao = dbFormaDePG!descontoporoperacao
-              Porcento = dbFormaDePG!DescontoPorcento / 100
+            dbFormaDePg.MoveFirst
+            dbFormaDePg.Find "codigonoposto='" & Trim(Codigo) & "'"
+            If dbFormaDePg.EOF = False Then
+              Tarifa = dbFormaDePg!descontovalor
+              Operacao = dbFormaDePg!descontoporoperacao
+              Porcento = dbFormaDePg!DescontoPorcento / 100
               
               ValorBruto = Valor
               DescontoPorcento = 0
@@ -3193,11 +3193,11 @@ SairDoCliente:
               
               Liquido = ValorBruto - DescontoPorcento - Tarifa - Operacao
               
-              If dbFormaDePG!CodigoConta = 0 Then
-                MsgBox "A forma de pagamento " & dbFormaDePG!Descri & " está sem conta destino!"
+              If dbFormaDePg!CodigoConta = 0 Then
+                MsgBox "A forma de pagamento " & dbFormaDePg!Descri & " está sem conta destino!"
               Else
                 
-                db.Execute "insert into formadepagamentorecebido2 (codigofechamento,codigoformadepg,descri,valorbruto,valordescoper,valordesctarifa,valordesconto,valor,operacoes,data,hora) values (" & dbFechamentos.Recordset!CodigoFechamento & "," & dbFormaDePG!CodigoPagamento & ",'" & dbFormaDePG!Descri & "'," & NumeroIngles(ValorBruto) & "," & NumeroIngles(Operacao) & "," & NumeroIngles(Tarifa) & "," & NumeroIngles(DescontoPorcento) & "," & NumeroIngles(Liquido) & "," & TotalOper & ",#" & DataBordero & "#,#" & Now & "#)"
+                db.Execute "insert into formadepagamentorecebido2 (codigofechamento,codigoformadepg,descri,valorbruto,valordescoper,valordesctarifa,valordesconto,valor,operacoes,data,hora) values (" & dbFechamentos.Recordset!CodigoFechamento & "," & dbFormaDePg!CodigoPagamento & ",'" & dbFormaDePg!Descri & "'," & NumeroIngles(ValorBruto) & "," & NumeroIngles(Operacao) & "," & NumeroIngles(Tarifa) & "," & NumeroIngles(DescontoPorcento) & "," & NumeroIngles(Liquido) & "," & TotalOper & ",#" & DataBordero & "#,#" & Now & "#)"
               End If
             End If
           End If
@@ -3248,7 +3248,7 @@ db.Execute "update importacaoerros set dataimportado=#" & DataInglesa(Date) & " 
 dbConfig.Close
 'dbVendasLeituraX.Close
 dbDespesasTipo.Close
-dbFormaDePG.Close
+dbFormaDePg.Close
 'DbClientes.Close
 dbClientesCarros.Close
 dbProdutos.Close
@@ -5204,7 +5204,7 @@ Dim SoPrimeira As Boolean
 Dim dbClientesNotas As New ADODB.Recordset
 Dim dbFormaDePgRecebido As New ADODB.Recordset
 Dim dbDespesasLanc As New ADODB.Recordset
-Dim DbClientes As New ADODB.Recordset
+Dim dbClientes As New ADODB.Recordset
 
 CodigoFechamento = dbFechamentos.Recordset!CodigoFechamento
 
@@ -5263,19 +5263,19 @@ db.Execute "delete from comissoes where codigofechamento=" & CodigoFechamento
 
 If SoPrimeira = False Then
   With dbClientesNotas
-    If DbClientes.State = adStateOpen Then
-      DbClientes.Close
+    If dbClientes.State = adStateOpen Then
+      dbClientes.Close
     End If
-    DbClientes.CursorLocation = adUseClient
-    DbClientes.Open "select *from clientes", db, adOpenKeyset, adLockOptimistic
+    dbClientes.CursorLocation = adUseClient
+    dbClientes.Open "select *from clientes", db, adOpenKeyset, adLockOptimistic
     
     If dbClientesNotas.RecordCount <> 0 Then
       Do While dbClientesNotas.EOF = False
-        DbClientes.MoveFirst
-        DbClientes.Find "codigocliente=" & dbClientesNotas!CodigoCliente
-        DbClientes!TotalNotas = DbClientes!TotalNotas - dbClientesNotas!ValorPrevisto
-        DbClientes!Saldo = DbClientes!Limite - DbClientes!TotalNotas - DbClientes!TotalBoleto
-        DbClientes.Update
+        dbClientes.MoveFirst
+        dbClientes.Find "codigocliente=" & dbClientesNotas!CodigoCliente
+        dbClientes!TotalNotas = dbClientes!TotalNotas - dbClientesNotas!ValorPrevisto
+        dbClientes!Saldo = dbClientes!Limite - dbClientes!TotalNotas - dbClientes!TotalBoleto
+        dbClientes.Update
         
         dbClientesNotas.MoveNext
       Loop
@@ -5283,7 +5283,7 @@ If SoPrimeira = False Then
     End If
   End With
   dbClientesNotas.Close
-  DbClientes.Close
+  dbClientes.Close
   
   db.Execute "delete *from formadepagamentorecebido2 where codigofechamento=" & CodigoFechamento
   
@@ -6269,6 +6269,7 @@ Me.KeyPreview = True
 End Sub
 
 Private Sub Form_KeyDown(KeyCode As Integer, Shift As Integer)
+'tratamento de teclas
 Select Case KeyCode
   Case vbKeyF5
     If Shift = 1 Then
